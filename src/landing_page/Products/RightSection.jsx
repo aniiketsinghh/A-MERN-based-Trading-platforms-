@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const RightSection = ({ img, title, description, one, two, google, app }) => {
   return (
-    <section className="flex flex-col md:flex-row-reverse items-center justify-center gap-16 mt-28 px-6 md:px-20 overflow-hidden">
+    <section className="mx-40 flex flex-col md:flex-row-reverse items-center justify-center gap-16 mt-28 px-6 md:px-20 overflow-hidden">
       {/* Image Right */}
       <motion.div
         className="flex justify-center md:w-1/2"
@@ -16,7 +16,7 @@ const RightSection = ({ img, title, description, one, two, google, app }) => {
         <motion.img
           src={img}
           alt={title}
-          className="w-3/4 max-w-md drop-shadow-lg"
+          className="w-5/6 max-w-md drop-shadow-lg"
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 200 }}
         />
